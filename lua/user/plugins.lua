@@ -104,6 +104,9 @@ return packer.startup(function(use)
   -- Theme
   use { "catppuccin/nvim", as = "catppuccin" }
 
+  -- Smooth Scroll
+  -- use 'karb94/neoscroll.nvim'
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

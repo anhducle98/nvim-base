@@ -29,6 +29,7 @@ require(colorscheme).setup {
     },
     mocha = {
       base = "#000000",
+      text = "#e5e5e5",
     },
   },
   highlight_overrides = {

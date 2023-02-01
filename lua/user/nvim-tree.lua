@@ -11,10 +11,17 @@ end
 local tree_cb = nvim_tree_config.nvim_tree_callback
 
 nvim_tree.setup {
+	disable_netrw = true,
+	hijack_netrw = true,
+	open_on_tab = false,
+	hijack_cursor = true,
+	hijack_unnamed_buffer_when_opening = false,
+	update_cwd = true,
   update_focused_file = {
     enable = true,
-    update_cwd = true,
+    update_cwd = false,
   },
+	sync_root_with_cwd = true,
   renderer = {
     root_folder_modifier = ":t",
     icons = {
@@ -54,8 +61,10 @@ nvim_tree.setup {
     },
   },
   view = {
-    width = 30,
+    width = 45,
     side = "left",
+		-- adaptive_size = true,
+		hide_root_folder = false,
     mappings = {
       list = {
         { key = { "l", "<CR>", "o" }, cb = tree_cb "edit" },
@@ -64,4 +73,13 @@ nvim_tree.setup {
       },
     },
   },
+  git = {
+    enable = true,
+    ignore = false,
+  },
+	actions = {
+		open_file = {
+			resize_window = true,
+		},
+	},
 }
