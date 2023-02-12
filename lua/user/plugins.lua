@@ -103,6 +103,7 @@ return packer.startup(function(use)
 
   -- Theme
   use { "catppuccin/nvim", as = "catppuccin" }
+  use { "rebelot/kanagawa.nvim", as = "kanagawa" }
 
   -- Smooth Scroll
   -- use 'karb94/neoscroll.nvim'
