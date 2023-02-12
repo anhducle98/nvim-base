@@ -9,6 +9,7 @@ local servers = {
 	"yamlls",
   "clangd",
   "ocamllsp",
+  "gopls",
 }
 
 local settings = {
