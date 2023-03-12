@@ -16,12 +16,13 @@ nvim_tree.setup {
 	open_on_tab = false,
 	hijack_cursor = true,
 	hijack_unnamed_buffer_when_opening = false,
-	update_cwd = false,
   update_focused_file = {
     enable = true,
-    update_cwd = false,
+    update_root = false,
   },
-	sync_root_with_cwd = true,
+	sync_root_with_cwd = false,
+  prefer_startup_root = true,
+  respect_buf_cwd = false,
   renderer = {
     root_folder_modifier = ":t",
     icons = {
@@ -61,7 +62,7 @@ nvim_tree.setup {
     },
   },
   view = {
-    width = 45,
+    width = 40,
     side = "left",
 		-- adaptive_size = true,
 		hide_root_folder = false,
