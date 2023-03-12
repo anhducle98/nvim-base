@@ -10,6 +10,7 @@ local servers = {
   "clangd",
   "ocamllsp",
   "gopls",
+  "texlab",
 }
 
 local settings = {
