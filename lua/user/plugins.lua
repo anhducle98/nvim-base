@@ -88,7 +88,7 @@ return packer.startup(function(use)
   use { "nvim-treesitter/nvim-treesitter" }
 
   -- Git
-  use { "lewis6991/gitsigns.nvim" }
+  -- use { "lewis6991/gitsigns.nvim" }
 
   -- Smooth Scroll
   -- use 'karb94/neoscroll.nvim'

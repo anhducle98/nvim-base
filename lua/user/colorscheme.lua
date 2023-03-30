@@ -6,7 +6,7 @@ local colorscheme = "kanagawa"
 -- Default options:
 require('kanagawa').setup({
     compile = false,             -- enable compiling the colorscheme
-    undercurl = false,            -- enable undercurls
+    undercurl = true,            -- enable undercurls
     commentStyle = { italic = false },
     functionStyle = {},
     keywordStyle = { italic = false },
