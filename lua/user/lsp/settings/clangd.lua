@@ -3,6 +3,7 @@ return {
 		offsetEncoding = "utf-16",
 	},
 	args = {
+    "-xc++",
 		"--background-index",
 		"-std=c++20",
 		"--pch-storage=memory",
